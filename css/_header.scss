@@ -1,0 +1,77 @@
+@use "./variables" as v;
+@use "./mixins" as m;
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0 auto 20px;
+  width: 100%;
+
+  @include m.desktop {
+    justify-content: space-between;
+    max-width: 990px;
+  }
+}
+
+.header__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  min-width: 375px;
+}
+
+.header__logo {
+  display: block;
+  width: 100px;
+  height: auto;
+
+  @include m.desktop {
+    width: 150px;
+  }
+}
+
+.header__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__text-head {
+  color: v.$primary;
+  text-transform: uppercase;
+  @include m.head;
+
+  @include m.desktop {
+    @include m.head-desktop;
+  }
+}
+
+.header__text-description {
+  color: v.$text-dark;
+  @include m.light;
+}
+
+.header__communication {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: v.$text-dark;
+  @include m.light;
+}
+
+.header__socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: v.$text-dark;
+}

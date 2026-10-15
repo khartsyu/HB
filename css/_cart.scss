@@ -1,0 +1,74 @@
+@use "./variables" as v;
+@use "./mixins" as m;
+
+.cart {
+  margin-bottom: 100px;
+}
+
+.cart__positions {
+  justify-content: space-between;
+  color: v.$text-dark;
+  text-transform: uppercase;
+  @include m.light;
+}
+
+.cart__positions-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.cart__position-wrap {
+  display: flex;
+  gap: 10px;
+}
+
+.cart__position-sum {
+  width: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.cart__total {
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-between;
+  color: v.$text-dark;
+  text-transform: uppercase;
+  border-top: 1px solid v.$primary;
+  @include m.light;
+}
+
+.cart__total-sum {
+  width: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.cart-click {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: v.$primary;
+  border-radius: 10px;
+  color: v.$text-primary;
+  text-transform: uppercase;
+  @include m.light;
+
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: v.$counter-hover;
+  }
+
+  &:active {
+    background: v.$counter-active;
+  }
+}

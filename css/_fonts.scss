@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "TT Commons";
+  src:
+    local("TT Commons"),
+    url("fonts/TTCommons-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Commons";
+  src:
+    local("TT Commons"),
+    url("fonts/TTCommons-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "TT Commons";
+  src:
+    local("TT Commons"),
+    url("fonts/TTCommons-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

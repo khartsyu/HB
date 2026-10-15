@@ -1,0 +1,67 @@
+@use "./variables" as v;
+@use "./mixins" as m;
+
+.products {
+  margin-bottom: 100px;
+}
+
+.products__wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.products__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 20px 20px;
+  width: 400px;
+  height: 570px;
+}
+
+.products__item-img {
+  height: 500px;
+  border-radius: 15px;
+  object-fit: cover;     
+  object-position: center;
+}
+
+.products__item-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products__name {
+  color: v.$text-dark;
+  text-transform: uppercase;
+  @include m.light;
+}
+
+.products__price {
+  color: v.$text-dark;
+  text-transform: uppercase;
+  @include m.price;
+}
+
+.products__cart {
+  padding: 8px;
+  background-color: v.$primary;
+  border-radius: 10px;
+  color: v.$text-primary;
+  text-transform: uppercase;
+  @include m.light;
+
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: v.$counter-hover;
+  }
+
+  &:active {
+    background: v.$counter-active;
+  }
+}

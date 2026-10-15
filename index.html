@@ -1,11 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Декор для дня рождения</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Только раз в году</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="index.html" class="header__link">
+          <img class="header__logo" src="images/logo.png" alt="Логотип: чебурашка" />
+          <div class="header__text">
+            <span class="header__text-head">только раз в году</span>
+            <span class="header__text-description">магазин декора на день рождения</span>
+          </div>
+        </a>
+
+        <div class="header__communication">
+          <address class="header__contacts">
+            <a href="tel:+79009198494" class="header__phone">+7 (900) 919-84-94</a>
+            <a href="mailto:tomilovaylija260596@mail.ru" class="footer__email">tomilovaylija260596@mail.ru</a>
+          </address>
+
+          <ul class="header__socials" aria-label="Социальные сети">
+            <li class="header__social">
+              <a href="https://t.me/HB" class="header__social-link" aria-label="Telegram">
+                <svg class="icon-social" viewBox="0 0 16 16" aria-hidden="true">
+                  <path
+                    fill="currentColor"
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="header__social">
+              <a href="https://vk.com/8572" class="footer__social-link" aria-label="ВКонтакте">
+                <svg class="icon-social" viewBox="0 0 32 32" aria-hidden="true">
+                  <path fill="currentColor" d="M0 0h32v32H0z" />
+                  <path
+                    fill="#fff"
+                    d="M16.8 21.615c-6.15 0-9.656-4.208-9.8-11.22h3.093c.099 5.142 2.364 7.318 4.163 7.767v-7.768h2.904v4.433c1.771-.19 3.641-2.212 4.27-4.442h2.896a8.57 8.57 0 0 1-3.938 5.602A8.87 8.87 0 0 1 25 21.615h-3.192c-.683-2.131-2.391-3.785-4.648-4.01v4.01h-.36"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="main">
+        <section class="products">
+          <h2 class="section__header">товары</h2>
+          <ul class="products__wrap">
+            <li class="products__item">
+              <img class="products__item-img" src="images/flag.jpg" alt="флажки" />
+              <div class="products__item-description">
+                <h3 class="products__name">флажки бумажные</h3>
+                <div class="products__price"><span>350</span> ₽</div>
+                <button
+                  class="products__cart"
+                  data-name="Флажки бумажные"
+                  data-price="350"
+                  aria-label="Добавить флажки в корзину"
+                >
+                  <svg class="icon-cart" viewBox="0 0 1024 1024" aria-hidden="true">
+                    <path
+                      fill="currentColor"
+                      d="M1015.66 284a31.82 31.82 0 0 0-25.998-13.502H310.526l-51.408-177.28c-20.16-69.808-68.065-77.344-87.713-77.344H34.333c-17.569 0-31.777 14.224-31.777 31.776S16.78 79.425 34.332 79.425h137.056c4.336 0 17.568 0 26.593 31.184l176.848 649.936c3.84 13.712 16.336 23.183 30.591 23.183h431.968c13.409 0 25.376-8.4 29.905-21.024l152.256-449.68c3.504-9.744 2.048-20.592-3.888-29.024zM815.026 720.194H429.539L328.387 334.066h616.096zM752.003 848.13c-44.192 0-80 35.808-80 80s35.808 80 80 80 80-35.808 80-80-35.808-80-80-80zm-288 0c-44.192 0-80 35.808-80 80s35.808 80 80 80 80-35.808 80-80-35.808-80-80-80z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="products__item">
+              <img class="products__item-img" src="images/banner.jpg" alt="плакат тканевый" />
+              <div class="products__item-description">
+                <h3 class="products__name">плакат тканевый</h3>
+                <div class="products__price"><span>1000</span> ₽</div>
+                <button
+                  class="products__cart"
+                  data-name="Плакат тканевый"
+                  data-price="1000"
+                  aria-label="Добавить плакат тканевый в корзину"
+                >
+                  <svg class="icon-cart" viewBox="0 0 1024 1024" aria-hidden="true">
+                    <path
+                      fill="currentColor"
+                      d="M1015.66 284a31.82 31.82 0 0 0-25.998-13.502H310.526l-51.408-177.28c-20.16-69.808-68.065-77.344-87.713-77.344H34.333c-17.569 0-31.777 14.224-31.777 31.776S16.78 79.425 34.332 79.425h137.056c4.336 0 17.568 0 26.593 31.184l176.848 649.936c3.84 13.712 16.336 23.183 30.591 23.183h431.968c13.409 0 25.376-8.4 29.905-21.024l152.256-449.68c3.504-9.744 2.048-20.592-3.888-29.024zM815.026 720.194H429.539L328.387 334.066h616.096zM752.003 848.13c-44.192 0-80 35.808-80 80s35.808 80 80 80 80-35.808 80-80-35.808-80-80-80zm-288 0c-44.192 0-80 35.808-80 80s35.808 80 80 80 80-35.808 80-80-35.808-80-80-80z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="products__item">
+              <img class="products__item-img" src="images/balls.jpg" alt="воздушные шары" />
+              <div class="products__item-description">
+                <h3 class="products__name">воздушные шары</h3>
+                <div class="products__price"><span>250</span> ₽</div>
+                <button
+                  class="products__cart"
+                  data-name="Воздушные шары"
+                  data-price="250"
+                  aria-label="Добавить воздушные шары в корзину"
+                >
+                  <svg class="icon-cart" viewBox="0 0 1024 1024" aria-hidden="true">
+                    <path
+                      fill="currentColor"
+                      d="M1015.66 284a31.82 31.82 0 0 0-25.998-13.502H310.526l-51.408-177.28c-20.16-69.808-68.065-77.344-87.713-77.344H34.333c-17.569 0-31.777 14.224-31.777 31.776S16.78 79.425 34.332 79.425h137.056c4.336 0 17.568 0 26.593 31.184l176.848 649.936c3.84 13.712 16.336 23.183 30.591 23.183h431.968c13.409 0 25.376-8.4 29.905-21.024l152.256-449.68c3.504-9.744 2.048-20.592-3.888-29.024zM815.026 720.194H429.539L328.387 334.066h616.096zM752.003 848.13c-44.192 0-80 35.808-80 80s35.808 80 80 80 80-35.808 80-80-35.808-80-80-80zm-288 0c-44.192 0-80 35.808-80 80s35.808 80 80 80 80-35.808 80-80-35.808-80-80-80z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="products__item">
+              <img class="products__item-img" src="images/candle.jpg" alt="свечи на торт" />
+              <div class="products__item-description">
+                <h3 class="products__name">свечи на торт</h3>
+                <div class="products__price"><span>100</span> ₽</div>
+                <button
+                  class="products__cart"
+                  data-name="Свечи на торт"
+                  data-price="100"
+                  aria-label="Добавить свечи на торт в корзину"
+                >
+                  <svg class="icon-cart" viewBox="0 0 1024 1024" aria-hidden="true">
+                    <path
+                      fill="currentColor"
+                      d="M1015.66 284a31.82 31.82 0 0 0-25.998-13.502H310.526l-51.408-177.28c-20.16-69.808-68.065-77.344-87.713-77.344H34.333c-17.569 0-31.777 14.224-31.777 31.776S16.78 79.425 34.332 79.425h137.056c4.336 0 17.568 0 26.593 31.184l176.848 649.936c3.84 13.712 16.336 23.183 30.591 23.183h431.968c13.409 0 25.376-8.4 29.905-21.024l152.256-449.68c3.504-9.744 2.048-20.592-3.888-29.024zM815.026 720.194H429.539L328.387 334.066h616.096zM752.003 848.13c-44.192 0-80 35.808-80 80s35.808 80 80 80 80-35.808 80-80-35.808-80-80-80zm-288 0c-44.192 0-80 35.808-80 80s35.808 80 80 80 80-35.808 80-80-35.808-80-80-80z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="cart" id="cart">
+          <h2 class="section__header">корзина</h2>
+          <ul class="cart__positions">
+            <!-- позиции появятся здесь через JS 
+            <li class="cart__positions-item">
+              <div class="cart__position-name">Флажки</div>
+              <div class="cart__position-wrap">
+                <div class="counter">
+                  <button type="button" class="counter__btn counter__btn--minus" aria-label="Уменьшить">-</button>
+                  <input
+                    type="text"
+                    class="counter__input"
+                    value="1"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                    aria-label="Количество"
+                  />
+                  <button type="button" class="counter__btn counter__btn--plus" aria-label="Увеличить">+</button>
+                </div>
+                <div class="cart__position-sum"><span>650</span> ₽</div>
+              </div>
+            </li>
+            <li class="cart__positions-item">
+              <div class="cart__position-name">Плакат тканевый</div>
+              <div class="cart__position-wrap">
+                <div class="counter">
+                  <button type="button" class="counter__btn counter__btn--minus" aria-label="Уменьшить">-</button>
+                  <input
+                    type="text"
+                    class="counter__input"
+                    value="1"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                    aria-label="Количество"
+                  />
+                  <button type="button" class="counter__btn counter__btn--plus" aria-label="Увеличить">+</button>
+                </div>
+                <div class="cart__position-sum"><span>1000</span> ₽</div>
+              </div>
+            </li>-->
+          </ul>
+          <div class="cart__total">
+            <span>сумма покупки: </span>
+            <div class="cart__total-sum"><span>1650</span> ₽</div>
+          </div>
+        </section>
+        <a href="#cart" class="cart-click" aria-label="Перейти к корзине"> перейти к корзине </a>
+      </main>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
 </html>
