@@ -7,25 +7,30 @@
 
 .products__wrap {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 24px;                
+  padding: 0 16px;
 }
 
 .products__item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 20px 20px;
-  width: 400px;
-  height: 570px;
+  width: 100%;
+  max-width: 320px; 
+  min-width: 0; 
+  
 }
 
 .products__item-img {
-  height: 500px;
+  width: 100%;
+  aspect-ratio: 3 / 4; 
   border-radius: 15px;
   object-fit: cover;     
   object-position: center;
+  display: block;
+  margin-bottom: 12px;
 }
 
 .products__item-description {
@@ -57,7 +62,7 @@
   cursor: pointer;
   transition: background 0.2s;
 
-  &:hover {
+  @media (hover: hover) {
     background: v.$counter-hover;
   }
 

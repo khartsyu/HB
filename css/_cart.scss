@@ -64,7 +64,7 @@
   cursor: pointer;
   transition: background 0.2s;
 
-  &:hover {
+  @media (hover: hover) {
     background: v.$counter-hover;
   }
 
@@ -86,7 +86,7 @@
   cursor: pointer;
   transition: background 0.2s;
 
-  &:hover {
+  @media (hover: hover) {
     background: v.$counter-hover;
   }
 
