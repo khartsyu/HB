@@ -72,3 +72,25 @@
     background: v.$counter-active;
   }
 }
+
+.cart__checkout {
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
+  background-color: v.$primary;
+  border-radius: 10px;
+  color: v.$text-primary;
+  text-transform: uppercase;
+  @include m.light;
+
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: v.$counter-hover;
+  }
+
+  &:active {
+    background: v.$counter-active;
+  }
+}

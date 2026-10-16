@@ -1,0 +1,8 @@
+@use "./variables" as v;
+@use "./mixins" as m;
+
+.footer {
+  text-align: center;
+  color: v.$text-dark;
+  @include m.light;
+}

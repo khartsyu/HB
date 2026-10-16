@@ -127,21 +127,21 @@ legend {
 
 @font-face {
   font-family: "TT Commons";
-  src: local("TT Commons"), url("fonts/TTCommons-Light.woff") format("woff");
+  src: local("TT Commons"), url("../fonts/TTCommons-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "TT Commons";
-  src: local("TT Commons"), url("fonts/TTCommons-Medium.woff") format("woff");
+  src: local("TT Commons"), url("../fonts/TTCommons-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "TT Commons";
-  src: local("TT Commons"), url("fonts/TTCommons-Bold.woff") format("woff");
+  src: local("TT Commons"), url("../fonts/TTCommons-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -375,6 +375,35 @@ legend {
 }
 .cart-click:active {
   background: #c89c6a;
+}
+
+.cart__checkout {
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
+  background-color: #c76f00;
+  border-radius: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "TT Commons", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.cart__checkout:hover {
+  background: #e2ccb3;
+}
+.cart__checkout:active {
+  background: #c89c6a;
+}
+
+.footer {
+  text-align: center;
+  color: #452d10;
+  font-family: "TT Commons", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 .container {
